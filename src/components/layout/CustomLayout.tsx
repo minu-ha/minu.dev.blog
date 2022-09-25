@@ -1,0 +1,19 @@
+import React, { FC, ReactNode } from 'react';
+import * as SC from './CustomLayout.styled';
+import Navigation from './fragments/Navigation';
+
+export interface CustomLayoutProps {
+  children?: ReactNode;
+}
+
+const CustomLayout: FC<CustomLayoutProps> = props => {
+  const { children } = props;
+  return (
+    <SC.Main>
+      <Navigation />
+      {children}
+    </SC.Main>
+  );
+};
+
+export default CustomLayout;
