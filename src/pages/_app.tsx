@@ -1,14 +1,15 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
 import { Reset } from 'styled-reset';
-import GlobalStyle from '../components/layout/GlobalStyle';
+import CustomLayout from '../components/layout/CustomLayout';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Reset />
-      <GlobalStyle />
-      <Component {...pageProps} />
+      <CustomLayout>
+        <Component {...pageProps} />
+      </CustomLayout>
     </>
   );
 };

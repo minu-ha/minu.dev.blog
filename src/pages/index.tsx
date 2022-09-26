@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import React from 'react';
-import CustomLayout from '../components/layout/CustomLayout';
+import Contents from '../components/home/Contents';
 
 const Home: NextPage = () => {
-  return <CustomLayout />;
+  return <Contents />;
 };
 
 export default Home;

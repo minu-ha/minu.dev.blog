@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 
 export const NavigationStyled = styled.nav`
+  position: fixed;
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: #f4bf2c;
+  z-index: 100;
 `;
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1400px;
   height: 100%;
-  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -25,9 +26,8 @@ export const Home = styled.div`
   width: 150px;
   height: 100%;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
-  justify-content: center;
   align-items: center;
 `;
 
@@ -43,6 +43,6 @@ export const Page = styled.li`
   margin-bottom: auto;
   padding-left: 50px;
   padding-right: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
 `;

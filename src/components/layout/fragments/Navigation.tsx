@@ -8,7 +8,7 @@ const Navigation: FC = () => {
     <SC.NavigationStyled>
       <SC.Container>
         <SC.Home>
-          <Link href={Path.INDEX}>M I N U.</Link>
+          <Link href={Path.INDEX}>M I N U .</Link>
         </SC.Home>
         <SC.Pages>
           <SC.Page>
